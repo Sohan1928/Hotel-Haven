@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.font-playfair {
+  font-family: "Playfair", serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* toggle mode change color */
+:root {
+  --bg-color: #ffffff;
+}
+
+.dark {
+  --bg-color: #353935;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
