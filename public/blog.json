@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724794912/qhndnw7kgjdidzxfxydp.avif",
+    "place": "Santorini, Greece",
+    "date": "2024-06-15",
+    "type": "Travel Trip"
+  },
+  {
+    "id": 2,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724794945/mqj6inqkn2htqt0amwg6.avif",
+    "place": "Kyoto, Japan",
+    "date": "2024-07-22",
+    "type": "Event"
+  },
+  {
+    "id": 3,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724794962/ir3xzsecnnbade1obhe8.jpg",
+    "place": "New York City, USA",
+    "date": "2024-08-10",
+    "type": "Event"
+  },
+  {
+    "id": 4,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724794978/a2c4wqs3syoxrxjhbbcw.jpg",
+    "place": "Cappadocia, Turkey",
+    "date": "2024-05-30",
+    "type": "Camping"
+  },
+  {
+    "id": 5,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724795020/nlbaccgtm1bj47mesixi.avif",
+    "place": "Reykjavik, Iceland",
+    "date": "2024-09-05",
+    "type": "Travel Trip"
+  },
+  {
+    "id": 6,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724795720/hgcwyoo5whw5nqodf4pm.avif",
+    "place": "Dhaka, Bangladesh",
+    "date": "2024-09-04",
+    "type": "Camping"
+  }
+]

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { TiStarFullOutline } from "react-icons/ti";
+import { RxStarFilled } from "react-icons/rx";
 import SectionTitle from "../../../components/SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
@@ -38,7 +38,7 @@ const Testimonials = () => {
         className="mySwiper"
       >
         {reviews.map((review) => (
-          <SwiperSlide key={review.id}>
+          <SwiperSlide key={review.name}>
             <div className="flex flex-col items-center mx-12 md:mx-28 text-center my-10">
               <img
                 className="w-24 h-24 my-3 rounded-full"
@@ -49,10 +49,10 @@ const Testimonials = () => {
               <h3 className="text-2xl font-medium py-2">{review.name}</h3>
               <p className="flex items-center gap-3">
                 <p className="flex text-[#da8e00] text-4xl gap-1">
-                  <TiStarFullOutline />
-                  <TiStarFullOutline />
-                  <TiStarFullOutline />
-                  <TiStarFullOutline />
+                  <RxStarFilled />
+                  <RxStarFilled />
+                  <RxStarFilled />
+                  <RxStarFilled />
                 </p>
                 <span className="text-xl">- {review.ratings}</span>
               </p>

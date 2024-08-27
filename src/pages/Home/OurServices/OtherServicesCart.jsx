@@ -12,7 +12,7 @@ const OtherServicesCart = ({ room }) => {
   };
 
   return (
-    <div style={cardStyle}>
+    <div style={cardStyle} className="bg-fixed">
       <div className="bg-white/70 px-3 py-3 w-full items-center">
         <h1 className="text-4xl">{title}</h1>
         <h4 className="">
