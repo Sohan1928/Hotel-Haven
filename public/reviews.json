@@ -1,0 +1,26 @@
+[
+  {
+    "description": "I had an amazing time at the Ocean View Suite. The room was spotless, the view was breathtaking, and the staff went above and beyond to make our stay comfortable. The bed was so cozy, and waking up to the sound of the waves was truly unforgettable. I can't wait to come back!",
+    "name": "Sarah M",
+    "ratings": 4.8,
+    "image": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724790901/edyqxlwqel0rafwh1c4v.avif"
+  },
+  {
+    "description": "I stayed in the Cityscape King Room during my business trip, and it was perfect. The room was modern and spacious with all the amenities I needed. The view of the city skyline was a nice bonus. The location was convenient, close to the business district. Highly recommend for business travelers.",
+    "name": "James R",
+    "ratings": 4.5,
+    "image": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724790926/khaprffrajusafs4junv.jpg"
+  },
+  {
+    "description": "The Garden View Room was a delightful surprise. The room had a charming rustic feel with a beautiful view of the garden. It was peaceful and quiet, making it a perfect escape from the city's hustle. The private balcony was a lovely spot to relax with a cup of coffee in the morning.",
+    "name": " Emily W",
+    "ratings": 4.7,
+    "image": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724790940/hisxckac77zxqrmcingr.jpg"
+  },
+  {
+    "description": "The Mountain Suite exceeded all my expectations. The separate living area and the luxurious bathroom made me feel right at home. The views of the mountains were stunning, and the overall ambiance of the suite was serene. It was a perfect getaway, and I left feeling refreshed and rejuvenated.",
+    "name": "Michael T",
+    "ratings": 4.9,
+    "image": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724790955/p9uflhyc6hrto6magnvw.avif"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724784107/l5k2ndkwr0x6rkdqhrli.avif",
+    "title": "Deluxe King Room",
+    "price": 150,
+    "size": "400 sq ft",
+    "capacity": 2,
+    "bed": "King Bed",
+    "service": "Free WiFi, Breakfast Included, Ocean View",
+    "btn": "More Details",
+    "description": "Experience ultimate comfort in our Deluxe King Room, featuring a spacious layout, modern decor, and a luxurious king-sized bed. Enjoy stunning ocean views and unwind with complimentary WiFi and breakfast.",
+    "location": "Oceanfront, Miami Beach, FL"
+  },
+  {
+    "id": 2,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724785258/k23enev6azn4ixbgqfzk.avif",
+    "title": "Double Queen Room",
+    "price": 120,
+    "size": "350 sq ft",
+    "capacity": 4,
+    "bed": "2 Queen Beds",
+    "service": "Free WiFi, City View, Complimentary Drinks",
+    "btn": "More Details",
+    "description": "Perfect for families or groups, our Double Queen Room offers two plush queen-sized beds and a cozy atmosphere. Enjoy city views, free WiFi, and complimentary drinks during your stay.",
+    "location": "Downtown, New York City, NY"
+  },
+  {
+    "id": 3,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724785303/pllgubv9blwilv3t4rdv.avif",
+    "title": "Suite with Balcony",
+    "price": 250,
+    "size": "600 sq ft",
+    "capacity": 3,
+    "bed": "King Bed",
+    "service": "Free WiFi, Breakfast Included, Private Balcony",
+    "btn": "More Details",
+    "description": "Indulge in luxury in our Suite with Balcony, offering expansive space, elegant furnishings, and a private balcony with breathtaking views. This suite includes a king bed, free WiFi, and a delicious breakfast.",
+    "location": "Beverly Hills, Los Angeles, CA"
+  },
+  {
+    "id": 4,
+    "img": "http://res.cloudinary.com/du0uabbwo/image/upload/v1724785409/cpstieyhlqvhbbspgpzx.avif",
+    "title": "Standard Single Room",
+    "price": 90,
+    "size": "300 sq ft",
+    "capacity": 1,
+    "bed": "Single Bed",
+    "service": "Free WiFi, Mountain View, Room Service",
+    "btn": "More Details",
+    "description": "Ideal for solo travelers, our Standard Single Room offers a comfortable single bed and a peaceful environment. Relax with mountain views, free WiFi, and convenient room service.",
+    "location": "Aspen, Colorado"
+  }
+]

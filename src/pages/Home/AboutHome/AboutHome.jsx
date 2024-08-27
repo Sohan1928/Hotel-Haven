@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../../../assets/about_img1.webp";
 import img2 from "../../../assets/about_img2.webp";
+import { Link } from "react-router-dom";
 
 const AboutHome = () => {
   return (
@@ -19,9 +20,11 @@ const AboutHome = () => {
             guest house, or tree house, we’ve got you covered.
           </p>
           <div className="justify-center flex">
-            <button className="pt-8 items-center text-center justify-center flex uppercase border-b-[#da8e00] border-b-4">
-              Read More
-            </button>
+            <Link to="/aboutUs">
+              <button className="pt-8 items-center text-center justify-center flex uppercase border-b-[#da8e00] border-b-4">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-6">
