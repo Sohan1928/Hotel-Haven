@@ -5,11 +5,13 @@ import Rooms from "../pages/Rooms/Rooms";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Pages from "../pages/Pages/Pages";
 import Contact from "../pages/Contact/Contact";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -18,6 +20,7 @@ export const router = createBrowserRouter([
       {
         path: "/rooms/:id",
         element: <Rooms></Rooms>,
+        loader: () => fetch("../otherServices.json"),
       },
       {
         path: "/aboutUs",
