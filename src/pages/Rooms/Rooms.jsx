@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Rooms = () => {
   const rooms = useLoaderData();
@@ -9,13 +10,17 @@ const Rooms = () => {
 
   const handleBookedRoom = (e) => {
     const click = e.target.value;
-    console.log("clicked", click);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your Room Booking is complete",
+    });
   };
 
   return (
     <div>
       <Helmet>
-        <title>Hotel_Haven | Rooms</title>
+        <title>Hotel_Haven | Room Details</title>
       </Helmet>
       <div className="mx-auto text-center mt-10 mb-16">
         <h1 className="font-playfair text-4xl md:text-5xl font-bold">
