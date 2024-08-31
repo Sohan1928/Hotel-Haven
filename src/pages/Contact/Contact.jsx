@@ -54,6 +54,7 @@ const Contact = () => {
                 name="email"
                 id=""
                 placeholder="Email"
+                required
               />
             </div>
             <div className="mt-6">
