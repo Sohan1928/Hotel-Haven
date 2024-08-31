@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import NavbarBtn from "./NavbarBtn";
 import ToggleTheme from "./ToggleTheme";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
+
   const NavLinks = (
     <nav className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 md:text-base font-medium">
       <NavLink to="/">Home</NavLink>
@@ -41,7 +48,16 @@ const Navbar = () => {
           >
             {NavLinks}
             <div className="mt-3 mb-3">
-              <NavbarBtn></NavbarBtn>
+              {user ? (
+                <button
+                  onClick={handleSignOut}
+                  className="px-5 py-2 bg-[#da8e00] text-white text-lg font-semibold"
+                >
+                  LogOut
+                </button>
+              ) : (
+                <NavbarBtn></NavbarBtn>
+              )}
             </div>
           </ul>
         </div>
@@ -56,7 +72,16 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="flex gap-10 items-center menu menu-horizontal px-1">
           {NavLinks}
-          <NavbarBtn></NavbarBtn>
+          {user ? (
+            <button
+              onClick={handleSignOut}
+              className="px-5 py-2 bg-[#da8e00] text-white text-lg font-semibold"
+            >
+              LogOut
+            </button>
+          ) : (
+            <NavbarBtn></NavbarBtn>
+          )}
         </ul>
       </div>
       <div className="ml-4">

@@ -8,6 +8,7 @@ import Contact from "../pages/Contact/Contact";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import SignUp from "../shared/SignUp/SignUp";
 import Login from "../shared/Login/Login";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/rooms/:id",
-        element: <Rooms></Rooms>,
+        element: (
+          <PrivateRoutes>
+            <Rooms></Rooms>
+          </PrivateRoutes>
+        ),
         loader: () => fetch("../otherServices.json"),
       },
       {

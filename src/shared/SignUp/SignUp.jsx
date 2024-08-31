@@ -1,15 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import loginImg from "../../assets/loginImg.avif";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
+  const { createUser } = useContext(AuthContext);
+
   const handleSignUp = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const userName = e.target.userName.value;
     const email = e.target.email.value;
-    console.log("user created successfully", name, userName, email);
+    const password = e.target.password.value;
+    console.log("user created successfully", name, userName, email, password);
+
+    // create user
+    createUser(email, password)
+      .then((result) => {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "User Register Successfully",
+        });
+        console.log(result);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -30,7 +49,7 @@ const SignUp = () => {
             className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
             type="text"
             name="name"
-            id=""
+            id="name"
             placeholder="Name"
             required
           />
@@ -38,7 +57,7 @@ const SignUp = () => {
             className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
             type="text"
             name="userName"
-            id=""
+            id="userName"
             placeholder="User Name"
             required
           />
@@ -46,8 +65,16 @@ const SignUp = () => {
             className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
             type="email"
             name="email"
-            id=""
+            id="email"
             placeholder="Email"
+            required
+          />
+          <input
+            className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
+            type="password"
+            name="password"
+            id=""
+            placeholder="Password"
             required
           />
           <input

@@ -52,6 +52,9 @@ const Rooms = () => {
                 <p className="">
                   <span className="font-medium">Service:</span> {room.service}
                 </p>
+                <p className="">
+                  <span className="font-medium">Location:</span> {room.location}
+                </p>
                 <p className="md:w-96">
                   <span className="font-medium">Description:</span>{" "}
                   {room.description}

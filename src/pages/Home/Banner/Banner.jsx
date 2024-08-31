@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="pt-10 px-2 md:px-10 bg-[url(http://res.cloudinary.com/du0uabbwo/image/upload/v1724703881/se2gaveue9sa70bzeglz.avif)] bg-cover">
+    <div className="pt-10 px-2 md:px-10 bg-[url(http://res.cloudinary.com/du0uabbwo/image/upload/v1724703881/se2gaveue9sa70bzeglz.avif)] bg-cover bg-fixed">
       <div className="flex flex-col md:flex-row gap-6 items-center">
         <div className="w-3/5 text-white">
           <h2 className="text-2xl md:text-6xl font-semibold pb-4">

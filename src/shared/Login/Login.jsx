@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import loginImg from "../../assets/loginImg.avif";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log("location in the login page", location);
   const handleLogin = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
     const email = e.target.email.value;
-    console.log("login user", name, email);
+    const password = e.target.password.value;
+    console.log("login user", password, email);
+    signIn(email, password)
+      .then((result) => {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "User Logged Successfully",
+        });
+        console.log(result);
+
+        // navigate after login
+
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -25,20 +47,21 @@ const Login = () => {
           <h2 className="text-2xl font-bold text-center text-black">
             Please Login
           </h2>
-          <input
-            className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
-            type="text"
-            name="name"
-            id=""
-            placeholder="Name"
-            required
-          />
+
           <input
             className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
             type="email"
             name="email"
-            id=""
+            id="email"
             placeholder="Email"
+            required
+          />
+          <input
+            className="px-2 py-3 border mb-4 md:mb-0 w-full text-black"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
             required
           />
           <input
@@ -51,7 +74,7 @@ const Login = () => {
               New here?
               <Link to="/signUp" className="underline font-semibold">
                 {" "}
-                Please Register
+                Register Now
               </Link>
             </h2>
           </div>
