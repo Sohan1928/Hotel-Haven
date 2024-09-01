@@ -61,7 +61,7 @@ const Rooms = () => {
                 </p>
                 <button
                   onClick={handleBookedRoom}
-                  className="bg-[#da8e00] text-white py-2 mt-1 hover:bg-transparent hover:border hover:border-[#da8e00] transition duration-500 mx-4 hover:text-[#da8e00] rounded-full font-semibold"
+                  className="bg-[#da8e00] text-white py-2 mt-1 hover:bg-transparent hover:border hover:border-[#da8e00] transition duration-500 mx-4 hover:text-[#da8e00] rounded-md font-semibold"
                 >
                   Book Now
                 </button>

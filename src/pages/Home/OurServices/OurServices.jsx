@@ -20,7 +20,11 @@ const OurServices = () => {
         subHeading={"Discover Our Services"}
       ></SectionTitle>
 
-      <div className="grid md:grid-cols-3 items-center text-center mx-8 my-16 gap-10">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        className="grid md:grid-cols-3 items-center text-center mx-8 my-16 gap-10"
+      >
         {items.map((item) => (
           <ServicesCart key={item.id} item={item}></ServicesCart>
         ))}

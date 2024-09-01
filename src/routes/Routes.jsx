@@ -3,12 +3,12 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home/Home";
 import Rooms from "../pages/Rooms/Rooms";
 import AboutUs from "../pages/AboutUs/AboutUs";
-import Pages from "../pages/Pages/Pages";
 import Contact from "../pages/Contact/Contact";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import SignUp from "../shared/SignUp/SignUp";
 import Login from "../shared/Login/Login";
 import PrivateRoutes from "./PrivateRoutes";
+import Blogs from "../pages/Blogs/Blogs";
 
 export const router = createBrowserRouter([
   {
@@ -34,8 +34,9 @@ export const router = createBrowserRouter([
         element: <AboutUs></AboutUs>,
       },
       {
-        path: "/pages",
-        element: <Pages></Pages>,
+        path: "/blogs/:id",
+        element: <Blogs></Blogs>,
+        loader: () => fetch("../blog.json"),
       },
       {
         path: "/contact",
