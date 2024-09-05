@@ -15,7 +15,6 @@ const ContactMap = () => {
   return (
     <div className="h-[500px] md:w-100%">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyAORu_Yrfu9l639ABg_i_MeGKqlubEDfaE" }}
         defaultCenter={defaultProps.center}
         yesIWantToUseGoogleMapApiInternals
         defaultZoom={defaultProps.zoom}
